@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+        <head>
+    <style>
+          body {
+      height: 100vh;
+      display: flex;           /*تجعل العنصر في وسط الصفحة أفقيًا.*/
+      justify-content: center; /*من ناحيت العرض*/
+      align-items: center;     /* تجعله في منتصف الصفحة عموديًا.*/
+    }
+    .spiner {
+      background-color: orangered;       /* لون الخلفية داخل الدائرة */
+      height: 400px;                       /* الارتفاع */
+      width: 400px;                        /* العرض */
+      border-radius: 50%;                  /* يحوّل العنصر إلى دائرة */
+      border: 25px solid white;          /* إطار سميك أبيض حول الدائرة */
+      border-top: 20px solid indigo;     /* الجزء العلوي من الإطار بلون مختلف */
+      animation: ani 2.5s linear infinite; /* حركة دوران مستمرة */
+    }
+
+      /*  ani: اسم الحركة
+          2.5s: مدة الدوران
+          linear: سرعة ثابتة
+          infinite: تكرار بلا توقف 
+      */
+
+
+         /* تعريف حركة الدوران */
+        @keyframes ani{
+            to{
+                transform:  rotate(360deg);
+            }
+        }
+    </style>
+        </head>
+
+        <body>
+             <div class="spiner"></div>
+
+        </body>
+
+</html>
